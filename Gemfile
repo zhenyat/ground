@@ -27,6 +27,7 @@ gem 'puma'                                      # Use Puma as the app server (NO
 # gem 'uglifier'                                  # Use Uglifier as compressor for JavaScript assets
 
 #gem 'sass-rails', '>= 6'
+gem 'sassc-rails'
 gem 'webpacker'                                 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'react-rails'   # react_component helper!   # https://rubygems.org/gems/react-rails/versions/1.7.1
                     # Do: rails generate react:install
