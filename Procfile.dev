@@ -1,0 +1,4 @@
+# Foreman's procfile
+
+web: bundle exec rails s
+webpacker: ./bin/webpack-dev-server
