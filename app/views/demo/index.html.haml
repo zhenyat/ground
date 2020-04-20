@@ -1,8 +1,20 @@
-%h1 Rails + Webpack + ReactJS (as Pack & as Component)
+.container
+  .row
+    .col-sm-8.col-sm-offset-2
+      %h1 Demo Page
+  %h3 Rails + Webpack + ReactJS (as Pack & as Component) + Bootstrap
 
-= image_tag 'logos/rails_bw_403x512.png', alt: 'Rails', size: '100x128'
-= image_tag 'logos/webpack_1200x1200.png',  alt: 'Rails', size: '128x128'
-= image_tag 'logos/reactjs_512x512.png',  alt: 'Rails', size: '128x128'
+  .row
+    .col-sm-3
+      = image_tag 'logos/rails_bw_403x512.png',    alt: 'Rails',     size: '100x128'
+    .col-sm-3
+      = image_tag 'logos/webpack_1200x1200.png',   alt: 'Webpack',   size: '128x128'
+    .col-sm-3
+      = image_tag 'logos/reactjs_512x512.png',     alt: 'ReactJS',   size: '128x128'
+    .col-sm-3
+      = image_tag 'logos/bootstrap_1600x1600.png', alt: 'Bootstrap', size: '128x128'
 
-= javascript_pack_tag 'hello_react'
-= react_component 'HelloWorld', {greeting: 'Hello from rails-react component'}
+  = javascript_pack_tag 'hello_react'  # appended to body
+
+  .text-danger= react_component 'HelloWorld', {greeting: 'Hello from rails-react component'}
+  
