@@ -9,12 +9,13 @@
 # 07.01.2020  Version for Rails 6 + Webpacker + ReactJS
 # 29.03.2020  'enum_help' is OFF
 # 02.04.2020  Ruby 2.7.1 / Rails 6.0.2.2
+# 03.07.2020  Rails 6.0.3.2
 ################################################################################
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
-gem 'rails', '6.0.2.2'                          # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '6.0.3.2'                          # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 gem 'sqlite3'                                   # Use sqlite3    as the database for Active Record
 #gem 'sqlite3', groups: [:test, :development]
@@ -75,7 +76,7 @@ gem 'mini_magick'                               # Use ActiveStorage variant http
 #gem "acts_as_list"                             # https://github.com/swanandp/acts_as_list
 #gem 'acts-as-taggable-on'                      # https://github.com/mbleigh/acts-as-taggable-on
 
-gem 'bootsnap', '>= 1.4.2', require: false      # Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', '1.4.7', require: false         # Reduces boot times through caching; required in config/boot.rb
 
 # MH 3-rd Edition
 gem 'faker'
@@ -95,7 +96,7 @@ end
 group :development do
   gem 'foreman'
   gem 'web-console'#, '>= 3.3.0'           # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'listen', '>= 3.0.5', '< 3.2'        # https://github.com/guard/listen
+  gem 'listen'#, '>= 3.0.5', '< 3.2'        # https://github.com/guard/listen
 # gem 'solargraph'        # For VS Code    # https://github.com/rails/execjs
   #gem 'spring'                            # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #gem 'spring-watcher-listen', '~> 2.0.0' # Makes spring watch files using the listen gem.
