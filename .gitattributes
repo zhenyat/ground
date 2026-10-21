@@ -1,0 +1,8 @@
+*.bsl text working-tree-encoding=UTF-8 eol=lf
+*.xml text eol=lf
+*.os  text eol=lf
+*.feature text eol=lf
+*.md  text eol=lf
+*.json text eol=lf
+*.epf binary
+*.erf binary
